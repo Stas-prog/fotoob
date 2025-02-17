@@ -3,7 +3,8 @@ import 'dotenv/config'
 const nextConfig = {
     env: {
         MONGODB_URI: process.env.MONGODB_URI,
-        API_URL: process.env.API_URL
+        API_URL: process.env.API_URL,
+        UPLOADTHING_TOKEN: process.env.UPLOADTHING_TOKEN
     },
     images: {
         remotePatterns: [
