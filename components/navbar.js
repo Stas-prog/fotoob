@@ -22,7 +22,7 @@ const NavBar = observer(() => {
         <Navbar bg="primary" variant="dark">
             <Container className='d-flex justify-content-between align-items-center' style={{ color: '#9ACD32' }}>
                 <Nav>
-                    <Link style={{ color: '#85193C', fontSize: '25px', fontWeight: 'bold' }} href={'/album'}>FOTO ALBUM</Link>
+                    <Link style={{ color: '#FFC1DA', fontSize: '25px', fontWeight: 'bold' }} href={'/album'}>FOTO ALBUM</Link>
                 </Nav>
                 <Nav>
 
