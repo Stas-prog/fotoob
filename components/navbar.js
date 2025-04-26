@@ -29,7 +29,7 @@ const NavBar = observer(() => {
                     <Button
                         variant={"outline-light"}
                         className='m-1 mt-4'                    >
-                        <Link href={'/admin'} style={{ fontWeight: 'bold', textDecoration: 'none', color: '#7C4585' }}
+                        <Link href={'/admin'} style={{ fontWeight: 'bold', textDecoration: 'none', color: '#8F87F1' }}
                         ><span>Адмін панель</span></Link>
                     </Button>
                     <Button
