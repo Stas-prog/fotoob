@@ -5,12 +5,14 @@
 }
 
 body.light {
-  background-image: url('/ftft.jpg');
+  /* background-image: url('/ftft.jpg'); */
+  background-color: #6DE1D2;
   background-size: cover;
 }
 
 body.dark {
-  background-image: url('/ftf.jpg');
+  /* background-image: url('/ftf.jpg'); */
+  background-color: #DBFFCB;
   background-size: cover;
 }
 
@@ -21,9 +23,9 @@ body.dark {
 }
 
 button.mt-4 {
-  background-color: #FF4500;
+  background-color: #6DE1D2;
   font-weight: 600;
-  color: #FFFF00;
+  color: #7C4585;
 }
 
 .foto {
@@ -41,4 +43,34 @@ button.mt-4 {
   left: 0;
   background-image: url('/fine.jpg');
   background-size: cover;
+}
+
+@media screen and (max-width: 420px) {
+  .tref {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tref {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tref {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .tref {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .tref {
+    width: 220px;
+  }
 }

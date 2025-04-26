@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Button } from "react-bootstrap";
@@ -12,35 +12,30 @@ import Link from 'next/link';
 const NavBar = observer(() => {
     const [value, setValue] = useState('dark')
 
-    const chengeTheme = () => {
-        value === 'dark' ? setValue('light') : setValue('dark')
+    useEffect(() => {
         document.body.className = value;
+    }, [value])
 
-    }
+    const chengeTheme = () => { value === 'dark' ? setValue('light') : setValue('dark') }
 
     return (
-        <Navbar bg="success" variant="dark">
+        <Navbar bg="primary" variant="dark">
             <Container className='d-flex justify-content-between align-items-center' style={{ color: '#9ACD32' }}>
                 <Nav>
-                    <Link style={{ color: '#0000CD', fontSize: '25px', fontWeight: 'bold' }} href={'/album'}>FOTO ALBUM</Link>
+                    <Link style={{ color: '#85193C', fontSize: '25px', fontWeight: 'bold' }} href={'/album'}>FOTO ALBUM</Link>
                 </Nav>
                 <Nav>
 
                     <Button
                         variant={"outline-light"}
-                        className='m-1 mt-4'
-                    // style={{ color: '#00FF00' }}
-
-                    >
-                        <Link href={'/admin'} style={{ fontWeight: 'bold' }}
-                        >Адмін панель</Link>
+                        className='m-1 mt-4'                    >
+                        <Link href={'/admin'} style={{ fontWeight: 'bold', textDecoration: 'none', color: '#7C4585' }}
+                        ><span>Адмін панель</span></Link>
                     </Button>
                     <Button
                         variant={"outline-light"}
                         onClick={chengeTheme}
-                        className='m-1 mt-4'
-                    // style={{ color: '#00FF00' }}
-                    >
+                        className='m-1 mt-4'                    >
                         Тема
                     </Button>
                 </Nav>

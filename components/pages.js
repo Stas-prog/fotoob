@@ -9,7 +9,7 @@ const Pages = observer(() => {
     const { foto } = useContext(FotoContext)
     // const pageCount = Math.ceil(foto.totalCount / foto.limit)
     const pages = []
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < 10; i++) {
         pages.push(i + 1)
     }
 

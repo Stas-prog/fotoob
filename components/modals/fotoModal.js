@@ -16,15 +16,15 @@ const FotoModal = observer(({ show, onHide }) => {
             show={show}
             onHide={onHide}
             centered
-            style={{ background: 'Orchid' }}
+            style={{ background: '#FFF8F8' }}
         >
 
-            <Modal.Body style={{ background: 'CornflowerBlue' }}>
+            <Modal.Body style={{ background: '#F5EEDD' }}>
                 <Container className="mt-3">
-                    <Image src={foto.selectedFoto.img} alt='my image' width={450} height={500} style={{ objectFit: 'contain' }} />
+                    <Image src={foto.selectedFoto.img} alt='my image' width={450} height={500} style={{ objectFit: 'contain' }} className='tref' />
                 </Container>
             </Modal.Body>
-            <Modal.Footer style={{ background: 'CornflowerBlue' }}>
+            <Modal.Footer style={{ background: '#F5EEDD' }}>
                 <Button variant="outline-danger" onClick={onHide}>Закрити</Button>
             </Modal.Footer>
         </Modal>

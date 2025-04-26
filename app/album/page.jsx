@@ -25,7 +25,7 @@ const Album = observer(() => {
     }, [foto])
 
     useEffect(() => {
-        fetchFotos(foto.selectedYear._id, foto.selectedPlace._id, foto.page, 12).then(data => {
+        fetchFotos(foto.selectedYear._id, foto.selectedPlace._id, foto.page, 8).then(data => {
             foto.setFotos(data)
         })
     }, [foto.selectedYear, foto.selectedPlace, foto.page, foto.limit])
