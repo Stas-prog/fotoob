@@ -19,6 +19,7 @@ const Admin = () => {
                 <Button
                     variant={"outline-dark"}
                     className="mt-4 p-2"
+                    style={{ color: '#B771E5', fontWeight: 'bold' }}
                     onClick={() => setYearVisible(true)}
                 >
                     Додати рік
@@ -26,6 +27,7 @@ const Admin = () => {
                 <Button
                     variant={"outline-dark"}
                     className="mt-4 p-2"
+                    style={{ color: '#00879E', fontWeight: 'bold' }}
                     onClick={() => setPlaceVisible(true)}
                 >
                     Додати місце
@@ -33,6 +35,7 @@ const Admin = () => {
                 <Button
                     variant={"outline-dark"}
                     className="mt-4 p-2"
+                    style={{ color: '#DF6D14', fontWeight: 'bold' }}
                     onClick={() => setFotoVisible(true)}
                 >
                     Додати фото
