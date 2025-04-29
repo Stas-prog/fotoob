@@ -41,7 +41,7 @@ export const createFoto = async (url, yearId, placeId) => {
     return data
 }
 
-export const fetchFotos = async (yearId = '67aa553683160332a5da7f58', placeId = '67a9fec8276b76b995c68341', page = 1, limit = 8) => {
+export const fetchFotos = async (yearId = '681002bede9ff6deb1f1c180', placeId = '681002d1de9ff6deb1f1c182', page = 1, limit = 8) => {
     const res = await fetch(`/api/foto?yearId=${yearId}&placeId=${placeId}&page=${page}&limit=${limit}`, { method: 'GET' })
     const { fotos } = await res.json()
     return fotos
